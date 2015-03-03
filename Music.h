@@ -1,27 +1,34 @@
-#include<iostream>
-#include <string> 
+/*
+Author: Barsha Dahal
+Roll no: 0309"A"
+Creating own class: Music Class
+*/
 
+#include <string>
 using namespace std;
 
-// Music class definition
+
 class Music
 {
-public:
-	Music (string cate="", string instru="", string type="");
-	void setCategory (string);
-	void setInstrument (string);
-	void setType(string);
-	string getCategory ();
-	string getInstrument ();
-	string getType (); 
-	void displayMessage ();
-private:
-	string Category;
-	string Instrument;
-	string Type;  
-};
+ public:
+         Music( string cate="", string instru="", string type="");
+        ~Music();
+        void setCategory(string m_cate);
+        void setInstrument(string m_instru);
+        void setType(string m_type);
+        string getCategory();
+        string getInstrument();
+        string getType();
+        void displayMsg();
 
+ private:
 
+		string cate;
+		string instru;
+		string type;
 
+ };
+
+// MUSIC_H
 
 
